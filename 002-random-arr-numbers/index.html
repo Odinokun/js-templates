@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random arr numbers</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <style>
+    body{background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);}
+  </style>
+</head>
+<body>
+<div class="container mt-4 mb-4">
+  <div class="row mb-4">
+    <h1 class="col-12 text-center mt-4 mb-4">Генерируем массив со случайными числами</h1>
+  </div>
+
+  <div class="row mb-2">
+    <div class="form-group col-12">
+      <label for="lengthArr">Длина массива</label>
+      <input class="form-control" id="lengthArr" value="10">
+    </div>
+    <div class="form-group col-12">
+      <label for="minValue">Минимальное число</label>
+      <input class="form-control" id="minValue" value="0">
+    </div>
+    <div class="form-group col-12">
+      <label for="maxValue">Максимальное число</label>
+      <input class="form-control" id="maxValue" value="100">
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-lg">
+      <button class="btn btn-success" id="pushBtn">Push to array</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg">
+      <div class="alert alert-info">
+        <h4 class="alert-heading">Наш массив:</h4>
+        <span id="out"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
