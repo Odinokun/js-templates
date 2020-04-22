@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  background: linear-gradient(to right, #f5af19, #f12711);
+}
+
+.scroll-block {
+  position: relative;
+  overflow: hidden;
+  width: 90vh;
+  max-width: 1000px;
+  height: 80vh;
+  background-image: url('bg-1.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.scroll-block__left,
+.scroll-block__right {
+  position: absolute;
+  width: 50%;
+  transition: transform .3s ease-out;
+  height: 100%;
+}
+
+.scroll-block__left {
+  transform: translateY(0);
+  top: 0;
+  left: 0;
+  background-color: #f12811;
+}
+
+.scroll-block__right {
+  right: 0;
+  bottom: 0;
+  background-color: #f5ad18;
+}
